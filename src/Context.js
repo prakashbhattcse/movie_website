@@ -4,7 +4,7 @@ import { useContext } from 'react';
 const AppContext = React.createContext();
 
 // const API_URL = "https://www.omdbapi.com/?apikey=102b3ca9&s=titanic";
-const API_URL = "https://www.omdbapi.com/?apikey=${process.env.REACT_APP_KEY}&s=titanic";
+export const API_URL = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_KEY}&s=titanic`;
 
 
 
@@ -18,6 +18,7 @@ const AppProvider = ({ children }) => {
         try {
             const res = await fetch(url);
             const data = await res.json();
+      
             console.log(data)
             if (data.Response === "True") {
                 setLoading(false);
