@@ -3,7 +3,8 @@ import { createContext } from "react"
 import { useContext } from 'react';
 const AppContext = React.createContext();
 
-const API_URL = "https://www.omdbapi.com/?apikey=102b3ca9&s=titanic";
+// const API_URL = "https://www.omdbapi.com/?apikey=102b3ca9&s=titanic";
+const API_URL = "https://www.omdbapi.com/?apikey=${process.env.REACT_APP_KEY}&s=titanic";
 
 
 
