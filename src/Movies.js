@@ -4,7 +4,15 @@ import { NavLink } from 'react-router-dom';
 import "./App.css"
 
 const Movies = () => {
-  const { movie } = useGlobalContext();
+  const { movie,loading } = useGlobalContext();
+
+  if(loading){
+    return(
+      <div >
+        <div className="loading">Loading ..</div>
+      </div>
+    )
+  }
 
   return (
     <>

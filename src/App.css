@@ -66,8 +66,8 @@ img {
   width: 25rem;
   max-width: 30rem;
   min-height: 30rem;
-  /* background-color: #fafaff; */
-  /* padding: 2rem; */
+  background-color: #fafaff;
+  padding: 2rem;
   border-radius: 1rem;
 
   display: flex;
